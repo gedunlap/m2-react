@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
-import { Link } from "react-router-dom"
+import Logo from './Logo';
 
 const Nav = styled.nav`
   width: 100%;
@@ -22,9 +22,7 @@ const Nav = styled.nav`
 function NavBar(props) {
   return (
     <Nav>
-      <div className="logo">
-      <Link to="/" className="navimg"><img src="https://i.imgur.com/S10uG78.jpg" alt="" /></Link>
-      </div>
+      <Logo />
       <Burger />
     </Nav>
   )

@@ -5,9 +5,11 @@ import NavRight from "./NavRight"
 const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
-    margin-right:10px;
     z-index: 20;
     display: none;
+    right: 10px;
+    top: 15px;
+    position: fixed;
 
     @media (max-width: 850px) {
         display: flex;
