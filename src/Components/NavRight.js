@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 const Ul = styled.ul`
     list-style: none;
@@ -31,10 +32,10 @@ const Ul = styled.ul`
 function NavRight({open}, props) {
     return (
         <Ul open={open}>
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Location</li>
-            <li>Contact</li>
+            <Link to="/about" className="navitem"><li>About</li></Link>
+            <Link to="/gallery" className="navitem"><li>Gallery</li></Link>
+            <Link to="/location" className="navitem"><li>Location</li></Link>
+            <Link to="/contact" className="navitem"><li>Contact</li></Link>
         </Ul>
     )
 }

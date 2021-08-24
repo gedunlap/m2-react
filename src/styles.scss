@@ -3,3 +3,159 @@
     padding: 0;
     font-family: helvetica;
 }
+
+.navitem {
+    text-decoration: none;
+    color: black;
+}
+
+.homepg {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hometext {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 100;
+        margin: 50px 0;
+
+        .t1 {
+            font-size: 50px;
+        }
+
+        .t2 {
+            font-size: 100px;
+        }
+        
+        .t3 {
+            font-size: 20px;
+        }
+
+        button {
+            margin: 30px 0;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .breakline {
+            width: 100%;
+            height: 1px;
+            background-color: black;
+        }
+
+        .t4 {
+            display: inline-block;
+            margin: 10px 0;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .t5 {
+            font-family: 'IBM Plex Mono', monospace;
+        }
+    }
+}
+
+.slidebox {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .slideshow {
+        overflow: hidden;
+        width: 100%;
+        // border: solid green;
+
+        .slideshowSlider {
+            white-space: nowrap;
+            transition: ease 1000ms;
+            // border: solid purple;
+
+            .slide {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-position-y: 0;
+                background-size: cover;
+                // border: solid red;
+
+                .slidecontent {
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100vh;
+
+                    .rightarrow, .leftarrow {
+                        font-size: 30px;
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        padding: 20px;
+                    }
+
+                    .rightarrow:hover, .leftarrow:hover {
+                        cursor: pointer;
+                    }
+
+                    .slidelink {
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    .slidelink:hover {
+                        color: rgb(255, 255, 255, 0.3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .homepg {
+        .hometext {
+            width: 90vw;
+            .t1 {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            .t2 {
+                font-size: 35px;
+                margin-bottom: 10px;
+            }
+            .t3 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .locationinfo {
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            margin: 0px;
+            width: 300px;
+        }
+
+        h3 {
+            margin: 0px;
+        }
+    }
+
+    .locationmap {
+        iframe {
+            max-height: 300px;
+        }
+    }
+}

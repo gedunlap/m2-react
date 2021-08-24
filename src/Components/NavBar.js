@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
+import { Link } from "react-router-dom"
 
 const Nav = styled.nav`
   width: 100%;
   height: 65px;
-  position: fixed;
-  /* bottom: 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +23,7 @@ function NavBar(props) {
   return (
     <Nav>
       <div className="logo">
-        <img src="https://i.imgur.com/S10uG78.jpg" alt="" />
+      <Link to="/" className="navimg"><img src="https://i.imgur.com/S10uG78.jpg" alt="" /></Link>
       </div>
       <Burger />
     </Nav>
