@@ -4,6 +4,18 @@
     font-family: helvetica;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white;
+}
+
 .navitem {
     text-decoration: none;
     color: black;
