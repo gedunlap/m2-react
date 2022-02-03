@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom'
 
 const slides = [
     {
-        img: "https://i.imgur.com/wYdoTwn.jpg",
-        title: "This is the first slide",
-        info: "there will be another slide too",
+        img: "https://i.imgur.com/CrJjauY.jpg",
+        title: "img1",
+        info: "placeholder",
     },
     {
-        img: "https://i.imgur.com/ihM5BwT.jpg",
-        title: "This is the second slide",
-        info: "click the link for the about page",
-        linkText: "LEARN MORE --->"
+        img: "https://i.imgur.com/GiyZh8W.jpg",
+        title: "img2",
+        info: "placeholder",
+        linkText: "About Link --->"
     },
     {
-        img: "https://i.imgur.com/Qshg5gQ.jpg",
-        title: "This is my dog lincoln",
-        info: "And also the last slide"
+        img: "https://i.imgur.com/FtEBq9l.jpg",
+        title: "img3",
+        info: "placeholder"
     }
 ]
 

@@ -95,17 +95,16 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
 
     .slideshow {
         overflow: hidden;
         width: 100%;
-        // border: solid green;
 
         .slideshowSlider {
             white-space: nowrap;
             transition: ease 1000ms;
-            // border: solid purple;
+            
 
             .slide {
                 display: inline-block;
@@ -113,15 +112,16 @@ body::-webkit-scrollbar-thumb {
                 width: 100%;
                 background-position: center;
                 background-position-y: 0;
-                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
                 // border: solid red;
 
                 .slidecontent {
-                    color: white;
+                    color: black;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    height: 100vh;
+                    height: 80vh;
 
                     .rightarrow, .leftarrow {
                         font-size: 30px;
