@@ -5,7 +5,7 @@ import Logo from './Logo';
 
 const Nav = styled.nav`
   width: 100%;
-  height: 65px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,7 @@ const Nav = styled.nav`
     img{
         max-width: 3rem;
         border-radius: 25px;
-        margin-left: 10px;
+        margin-left: 50px;
     }
   }
 `

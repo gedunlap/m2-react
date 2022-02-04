@@ -8,7 +8,7 @@ const slides = [
         info: "placeholder",
     },
     {
-        img: "https://i.imgur.com/GiyZh8W.jpg",
+        img: "https://i.imgur.com/d1medHx.jpg",
         title: "img2",
         info: "placeholder",
         linkText: "About Link --->"

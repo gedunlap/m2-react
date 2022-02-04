@@ -38,7 +38,6 @@ function NavRight({open}, props) {
         <Ul open={open}>
             <Link to="/about" className="navitem"><li>About</li></Link>
             <Link to="/gallery" className="navitem"><li>Gallery</li></Link>
-            {/* <Link to="/location" className="navitem"><li>Location</li></Link> */}
             <Link to="/contact" className="navitem"><li>Contact</li></Link>
             <a href="https://www.fresha.com/store/material-t8mbqg4o" className="navitem"><li>Shop</li></a>
         </Ul>
