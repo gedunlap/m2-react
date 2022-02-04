@@ -9,7 +9,7 @@ function Home(props){
         </div>
         <div className="hometext">
           <div className="t1">WELCOME TO</div>
-          <div className="t2">MATERIAL TAMPA</div>
+          <div className="t2">MATERIAL</div>
           <div className="t3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta nesciunt cum excepturi fugiat sint, accusantium esse praesentium eos est vero doloremque perspiciatis quas pariatur ea id sunt! Eos, impedit!</div>
           <Link to="/about"><button>LEARN MORE</button></Link>
           <div className="breakline"></div>

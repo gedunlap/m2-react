@@ -62,9 +62,9 @@ function SlideShow(props){
                                 }
                             }}>&#60;</div>
                         <div>
-                            <h2>{slide.title}</h2>
+                            {/* <h2>{slide.title}</h2>
                             <h3>{slide.info}</h3>
-                            <Link to="/about" className="slidelink">{slide.linkText}</Link>
+                            <Link to="/about" className="slidelink">{slide.linkText}</Link> */}
                         </div>
                         <div className="rightarrow" onClick={
                             () => {
