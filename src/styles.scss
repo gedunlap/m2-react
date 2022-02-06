@@ -96,6 +96,7 @@ body::-webkit-scrollbar-thumb {
         }
 
         .t6 {
+            font-family: 'IBM Plex Mono', monospace;
             margin-bottom: 50px;
         }
 
@@ -123,7 +124,7 @@ body::-webkit-scrollbar-thumb {
 
         .slideshowSlider {
             white-space: nowrap;
-            transition: ease-out 1000ms;
+            transition: ease-out 3000ms;
             
 
             .slide {
