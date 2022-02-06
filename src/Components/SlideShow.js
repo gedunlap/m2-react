@@ -53,7 +53,7 @@ function SlideShow(props){
                                 } else {
                                     setIndex(slides.length - 1)
                                 }
-                            }}><IoIosArrowDropleft /></div>
+                            }}><IoIosArrowDropleft size="30"/></div>
                         <div>
                             <img className='salonimg' src={slide.img} alt="" />
                         </div>
@@ -64,7 +64,7 @@ function SlideShow(props){
                                 } else {
                                     setIndex(0)
                                 }
-                            }}><IoIosArrowDropright /></div>
+                            }}><IoIosArrowDropright size="30"/></div>
                     </div>
                 </div>
                 ))}

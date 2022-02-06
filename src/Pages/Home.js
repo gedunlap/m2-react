@@ -19,7 +19,8 @@ function Home(props){
           <div className='t6'> Sat: 10am-4pm</div>
         </div>
         <div className="homeig">
-          
+          <a href="https://www.instagram.com/clint.color/"><img src="https://i.imgur.com/haZyUc0.png" alt="Clint" /></a>
+          <a href="https://www.instagram.com/derekpeterw/"><img src="https://i.imgur.com/oL53oK0.png" alt="Derek" /></a>
         </div>
       </div>
     )

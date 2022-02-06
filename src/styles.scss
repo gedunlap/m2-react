@@ -99,11 +99,17 @@ body::-webkit-scrollbar-thumb {
             margin-bottom: 50px;
         }
 
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
-    .homeig img {
-        max-width: 200px;
+    .homeig {
+        img{
+            max-width: 200px;
+            padding: 0 10px 20px 10px;
+        }
+        img:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -117,7 +123,7 @@ body::-webkit-scrollbar-thumb {
 
         .slideshowSlider {
             white-space: nowrap;
-            transition: ease 3000ms;
+            transition: ease 2000ms;
             
 
             .slide {
@@ -130,13 +136,8 @@ body::-webkit-scrollbar-thumb {
                     justify-content: center;
                     align-items: center;
                     
-                    .arrowright, .arrowleft {
-                        background-color: black;
-                        height: 100%;
-                        width: 10px;
-                    }
 
-                    .arrowright:hover, .arrowleft:hover{
+                    .rightarrow:hover, .leftarrow:hover{
                         cursor: pointer;
                     }
 
@@ -185,27 +186,9 @@ body::-webkit-scrollbar-thumb {
                 font-size: 18px;
             }
         }
-    }
 
-
-
-    .locationinfo {
-        flex-direction: column;
-        text-align: center;
-
-        img {
-            margin: 0px;
-            width: 300px;
-        }
-
-        h3 {
-            margin: 0px;
-        }
-    }
-
-    .locationmap {
-        iframe {
-            max-height: 300px;
+        .homeig img {
+            max-width: 150px;
         }
     }
 }
