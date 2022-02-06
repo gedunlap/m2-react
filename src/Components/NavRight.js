@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 
@@ -32,14 +32,13 @@ const Ul = styled.ul`
 
 function NavRight({open}, props) {
 
-    const navs = document.getElementsByClassName('navitem')
-
     return (
         <Ul open={open}>
+            <a href="https://www.fresha.com/a/material-tampa-2502-north-howard-avenue-tjr5uxjo/booking" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:""}}><li className="navitem">BOOK APPOINTMENT</li></a>
             <Link to="/about" className="navitem"><li>About</li></Link>
             <Link to="/gallery" className="navitem"><li>Gallery</li></Link>
             <Link to="/contact" className="navitem"><li>Contact</li></Link>
-            <a href="https://www.fresha.com/store/material-t8mbqg4o" className="navitem"><li>Shop</li></a>
+            <a href="https://www.fresha.com/store/material-t8mbqg4o" target="_blank" className="navitem" rel="noreferrer"><li>Shop</li></a>
         </Ul>
     )
 }

@@ -1,26 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { IoIosArrowDropright, IoIosArrowDropleft } from 'react-icons/io'
 
 const slides = [
     {
-        img: "https://i.imgur.com/CrJjauY.jpg",
-        title: "img1",
-        info: "placeholder",
+        img: "https://i.imgur.com/W9eQHT5.jpg",
     },
     {
-        img: "https://i.imgur.com/d1medHx.jpg",
-        title: "img2",
-        info: "placeholder",
-        linkText: "About Link --->"
+        img: "https://i.imgur.com/Q9L7sFY.jpg",
     },
     {
-        img: "https://i.imgur.com/FtEBq9l.jpg",
-        title: "img3",
-        info: "placeholder"
+        img: "https://i.imgur.com/xfJET6J.jpg",
     }
 ]
 
-const delay = 60000
+const delay = 15000
 
 function SlideShow(props){
 
@@ -51,7 +44,7 @@ function SlideShow(props){
         <div className="slideshow">
             <div className="slideshowSlider" style={{transform: `translate3d(${-index * 100}%, 0, 0)`}}>
                 {slides.map((slide, index) => (
-                <div key={index} className="slide" style={{backgroundImage:`url(${slide.img})`}}>
+                <div key={index} className="slide">
                     <div className="slidecontent">
                         <div className="leftarrow" onClick={
                             () => {
@@ -60,11 +53,9 @@ function SlideShow(props){
                                 } else {
                                     setIndex(slides.length - 1)
                                 }
-                            }}>&#60;</div>
+                            }}><IoIosArrowDropleft /></div>
                         <div>
-                            {/* <h2>{slide.title}</h2>
-                            <h3>{slide.info}</h3>
-                            <Link to="/about" className="slidelink">{slide.linkText}</Link> */}
+                            <img className='salonimg' src={slide.img} alt="" />
                         </div>
                         <div className="rightarrow" onClick={
                             () => {
@@ -73,7 +64,7 @@ function SlideShow(props){
                                 } else {
                                     setIndex(0)
                                 }
-                            }}>&#62;</div>
+                            }}><IoIosArrowDropright /></div>
                     </div>
                 </div>
                 ))}

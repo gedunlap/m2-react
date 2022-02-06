@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0 5%;
+    margin: 0;
 }
 
 body::-webkit-scrollbar {
@@ -20,25 +20,27 @@ body::-webkit-scrollbar-thumb {
     background: white;
 }
 
+.logo{
+    img {
+        margin-left: 20px;
+    }
+}
+
+.aptmntbtn {
+    padding: 0px 5px;
+    border: solid 1px;
+    border-radius: 40px;
+    background-color: black;
+}
+
 .navitem {
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
 
-.navbutton {
-    background-color: black;
-    color: white;
-    margin-right:10px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-}
-
-.navbutton:hover {
-    background-color: white;
-    color: black;
-    border: solid 1px black;
+.navitem:hover {
+    color: gray;
 }
 
 .homepg {
@@ -106,10 +108,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .slidebox {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    width: 40%;
+    height: 150vh;
+    width: 55%;
 
     .slideshow {
         overflow: hidden;
@@ -117,44 +117,32 @@ body::-webkit-scrollbar-thumb {
 
         .slideshowSlider {
             white-space: nowrap;
-            transition: ease 1000ms;
+            transition: ease 3000ms;
             
 
             .slide {
                 display: inline-block;
                 height: 100%;
                 width: 100%;
-                background-position: center;
-                background-position-y: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
 
                 .slidecontent {
-                    color: black;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
-                    height: 80vh;
                     
-                    .rightarrow, .leftarrow {
-                        font-size: 30px;
-                        display: flex;
-                        align-items: center;
+                    .arrowright, .arrowleft {
+                        background-color: black;
                         height: 100%;
-                        padding: 20px;
+                        width: 10px;
                     }
 
-                    .rightarrow:hover, .leftarrow:hover {
+                    .arrowright:hover, .arrowleft:hover{
                         cursor: pointer;
                     }
 
-                    .slidelink {
-                        text-decoration: none;
-                        color: white;
-                    }
-
-                    .slidelink:hover {
-                        color: rgb(255, 255, 255, 0.3);
+                    .salonimg {
+                        height: 150vh;
+                        width: 100%;
                     }
                 }
             }
@@ -166,8 +154,23 @@ body::-webkit-scrollbar-thumb {
     .navbutton {
         display: none;
     }
+    .logo {
+        img {
+            margin-left: 10px;
+        }
+    }
+    
 
     .homepg {
+
+        .slidebox {
+            width: 100%;
+            .salonimg {
+                max-height: 600px;
+                max-width: 100%;
+            }
+        }
+
         .hometext {
             width: 90vw;
             .t1 {
@@ -183,6 +186,8 @@ body::-webkit-scrollbar-thumb {
             }
         }
     }
+
+
 
     .locationinfo {
         flex-direction: column;

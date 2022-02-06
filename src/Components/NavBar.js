@@ -14,7 +14,6 @@ const Nav = styled.nav`
     img{
         max-width: 3rem;
         border-radius: 25px;
-        margin-left: 50px;
     }
   }
 `
