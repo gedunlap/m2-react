@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 body::-webkit-scrollbar {
@@ -115,19 +116,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 .slidebox {
+
     height: 100vh;
     width: 100%;
 
     .slideshow {
+        
         overflow: hidden;
         width: 100%;
 
         .slideshowSlider {
+            
             white-space: nowrap;
             transition: ease-out 1500ms;
             
 
             .slide {
+                
                 display: inline-block;
                 height: 100%;
                 width: 100%;
@@ -136,6 +141,7 @@ body::-webkit-scrollbar-thumb {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    width: 100%;
                     
 
                     .rightarrow:hover, .leftarrow:hover{

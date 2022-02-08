@@ -3,10 +3,10 @@ import { IoIosArrowDropright, IoIosArrowDropleft } from 'react-icons/io'
 
 const slides = [
     {
-        img: "https://imgur.com/u9MQNck.jpg",
+        img: "https://imgur.com/XL9L0qo.jpg",
     },
     {
-        img: "https://imgur.com/u9MQNck.jpg",
+        img: "https://imgur.com/sPSgrwa.jpg",
     },
     {
         img: "https://imgur.com/u9MQNck.jpg",
