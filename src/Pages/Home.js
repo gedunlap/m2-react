@@ -20,8 +20,8 @@ function Home(props){
         </div>
         <a href="https://www.fresha.com/a/material-tampa-2502-north-howard-avenue-tjr5uxjo/booking" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:""}}><button className='button'>BOOK APPOINTMENT</button></a>
         <div className="homeig">
-          <a href="https://www.instagram.com/clint.color/"><img src="https://i.imgur.com/haZyUc0.png" alt="Clint" /></a>
-          <a href="https://www.instagram.com/derekpeterw/"><img src="https://i.imgur.com/oL53oK0.png" alt="Derek" /></a>
+          <a href="https://www.instagram.com/clint.color/"><img src="https://i.imgur.com/uuGXuAq.png" alt="Clint" /></a>
+          <a href="https://www.instagram.com/derekpeterw/"><img src="https://i.imgur.com/py1XuS4.png" alt="Derek" /></a>
         </div>
       </div>
     )
