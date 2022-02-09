@@ -13,7 +13,7 @@ const slides = [
     }
 ]
 
-const delay = 15000
+const delay = 20000
 
 function SlideShow(props){
 
@@ -53,7 +53,7 @@ function SlideShow(props){
                                 } else {
                                     setIndex(slides.length - 1)
                                 }
-                            }}><IoIosArrowDropleft size="25"/></div>
+                            }}><IoIosArrowDropleft size="35"/></div>
                         <div>
                             <img className='salonimg' src={slide.img} alt="" />
                         </div>
@@ -64,7 +64,7 @@ function SlideShow(props){
                                 } else {
                                     setIndex(0)
                                 }
-                            }}><IoIosArrowDropright size="25"/></div>
+                            }}><IoIosArrowDropright size="35"/></div>
                     </div>
                 </div>
                 ))}
